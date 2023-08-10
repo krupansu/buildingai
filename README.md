@@ -1,4 +1,5 @@
-
+def generate_readme():
+    readme_content = """
 # AI-Enhanced Production Optimization for Manufacturing Industries
 
 ## Summary
@@ -32,6 +33,12 @@ The project's potential for growth includes integration with advanced technologi
 ## Acknowledgments
 
 This project draws inspiration from existing AI-driven solutions in manufacturing, such as predictive maintenance and process optimization platforms. Open-source libraries like TensorFlow and scikit-learn have been instrumental in developing AI models. We acknowledge the contributions of researchers, developers, and organizations that have advanced the field of AI in manufacturing.
+"""
 
-        
+    with open('README.md', 'w') as readme_file:
+        readme_file.write(readme_content)
 
+    print("README.md file generated successfully.")
+
+# Generate the README file
+generate_readme()
